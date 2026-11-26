@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maria Clara de Souza Demarqui | Formanda 2026</title>
+<meta name="description" content="Memórias escolares do Ensino Fundamental e do Ensino Médio e portfólio de redações de Maria Clara de Souza Demarqui.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="fita"></div>
+  <nav>
+    <a href="#memorias">Memórias</a>
+    <a href="#redacoes">Redações</a>
+    <button id="tema" aria-label="Alternar entre tema claro e escuro" title="Tema claro / escuro">☾</button>
+  </nav>
+  <img class="perfil" src="assets/perfil.jpg" alt="Minha foto" onerror="this.style.display='none'">
+  <h1>Maria Clara de Souza Demarqui</h1>
+  <p class="sub">Ensino Fundamental e Ensino Médio</p>
+  <div class="fita"></div>
+</header>
+
+<section id="memorias">
+  <h2>Memórias Escolares</h2>
+  <p class="intro">As fotos de cada período da minha vida escolar.</p>
+  <div class="timeline" id="timeline"></div>
+</section>
+
+<section id="redacoes">
+  <h2>Portfólio de Redações</h2>
+  <p class="intro">Textos produzidos nas aulas de Língua Portuguesa e Redação. Clique em um card para ler o texto completo.</p>
+  <input type="search" id="busca" placeholder="Buscar redação pelo título ou pelo texto...">
+  <p class="contagem" id="contagem"></p>
+  <p class="vazio" id="vazio" hidden>Nenhuma redação encontrada para essa busca.</p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<div class="modal" id="modal" hidden>
+  <article role="dialog" aria-modal="true">
+    <button id="fechar" aria-label="Fechar">✕</button>
+    <h3 id="mTitulo"></h3>
+    <small id="mMeta"></small>
+    <div id="mTexto"></div>
+  </article>
+</div>
+
+<footer>
+  <p>Feito com HTML, CSS e JavaScript · Turma 2026</p>
+  <p class="mini">Ensino Fundamental e Ensino Médio · Turma 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
